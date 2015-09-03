@@ -1,18 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title> Add a new bookmark</title>
-</head>
-<body>
-    <form action="" method="post">
-        <p>
-            Please enter your bookmark here:
-            <input type="text" name="url">
-        </p>
-        <p>
-            <button type="submit">Submit</button>
-        </p>
-    </form>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}
+Thermos Bookmark App - Add a Bookmark!
+{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>Add a new bookmark</h1>
+        <form action="" method="post">
+            <article>
+            <p>
+                Please enter your bookmark here:
+                <input type="text" name="url">
+            </p>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+            </article>
+        </form>
+    </section>
+{% endblock %}
+
+{% block sidebar %}
+{% endblock %}
