@@ -169,21 +169,32 @@ h1, h2, h3, h4, h5, h6 {
     color: #1E5373;
 }
 
-.main aside h3, footer h3{
+.main aside h3,
+footer h3,
+footer a,
+footer a: visited
+{
     color: white;
 }
 
+/* flashes styling */
+.flashes ul {
+    margin: 0 0 ;
+    background: #FFD6A3;
+    color: #000;
 
+    list-style-type: none;
+    list-style: none;
+}
 
+.flashes ul{
+    background: #FFD6A3;
+    color: #000;
+}
 
-
-
-
-
-
-
-
-
+article.flashes{
+    margin-bottom: 1em;
+}
 
 
 /* ==========================================================================
