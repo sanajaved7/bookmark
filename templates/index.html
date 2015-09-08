@@ -11,8 +11,16 @@ Thermos Bookmark App - Welcome!
             <p>Thermos is a simple social bookmarking app that makes saving your faves easy and fun.</p>
         </header>
         <section>
-            <h2>Article section h2</h2>
-            <p>Dessert pie pie ice cream. Lemon drops macaroon donut. Fruitcake bear claw sweet gingerbread muffin cake biscuit muffin. Sesame snaps sweet sugar plum croissant oat cake biscuit.</p>
+            <h2>Recently Added</h2>
+            {% if new_bookmarks %}
+                <ul>
+                    {% for bm in new_bookmarks %}
+                        <li> {{ bm.user }} added <a href="{{ bm.url }}">{{ bm.url }}</a></li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                No bookmarks yet.
+            {% endif %}
         </section>
         <section>
             <h2>Article section h2</h2>
