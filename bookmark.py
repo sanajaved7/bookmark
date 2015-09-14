@@ -20,7 +20,7 @@ class User:
 
 bookmarks = []
 
-def store_bookmark(url):
+def store_bookmark(url, description):
     bookmarks.append(dict(
         url = url,
         user = "sana",
